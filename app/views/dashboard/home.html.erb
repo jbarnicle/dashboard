@@ -1,0 +1,124 @@
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div id="container" style="min-width: 250px; height: 350px; margin: 0 auto"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+
+    <table class="table">
+      <thead>
+      <tr>
+        <th></th>
+        <th>Previous Year</th>
+        <th>Current</th>
+        <th>Goal</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Class of 2015</td>
+        <td>0</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Class of 2016</td>
+        <td>50</td>
+        <td>63</td>
+        <td>113</td>
+      </tr>
+      <tr>
+        <td>Class of 2017</td>
+        <td>113</td>
+        <td>58</td>
+        <td>171</td>
+      </tr>
+      <tr>
+        <td>Five Year Goal</td>
+        <td></td>
+        <td></td>
+        <td>248</td>
+      </tr>
+
+    </table>
+
+  </div>
+</div>
+
+</div>
+<script>
+    Highcharts.chart('container', {
+        title: {
+            text: 'Phoenix Fund'
+        },
+        xAxis: {
+            categories: ['2015', '2016', '2017', '5 Year Goal']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total Enrollment'
+            }
+        },
+
+        labels: {
+            items: [{
+                html: 'Student enrollment',
+                style: {
+                    left: '50px',
+                    top: '18px',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                }
+            }]
+        },
+        series: [{
+            type: 'column',
+            name: 'Previous year enrollment',
+            data: [0, 50, 113, 0]
+        }, {
+            type: 'column',
+            name: 'New enrollments',
+            data: [50, 63, 58, 0]
+        }, {
+            type: 'column',
+            name: 'Total enrollment',
+            data: [50, 113, 171, 248]
+        },
+            {
+            type: 'spline',
+            name: 'Total',
+            data: [50, 113, 171, 248],
+            marker: {
+                lineWidth: 2,
+                lineColor: Highcharts.getOptions().colors[3],
+                fillColor: 'white'
+            }
+        }, {
+            type: 'pie',
+            name: 'New students',
+            data: [{
+                name: '2015',
+                y: 50,
+                color: Highcharts.getOptions().colors[0] // Jane's color
+            }, {
+                name: '2016',
+                y: 63,
+                color: Highcharts.getOptions().colors[1] // John's color
+            }, {
+                name: '2017',
+                y: 58,
+                color: Highcharts.getOptions().colors[2] // Joe's color
+            }],
+            center: [100, 55],
+            size: 70,
+            showInLegend: false,
+            dataLabels: {
+                enabled: true
+            }
+        }]
+    });
+
+</script>
