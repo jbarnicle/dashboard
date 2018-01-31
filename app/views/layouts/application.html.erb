@@ -7,23 +7,55 @@
   <%= csrf_meta_tags %>
   <script src="https://code.highcharts.com/highcharts.src.js"></script>
 </head>
+<style>
+    .header {
+        margin:20px 0;
+        border-style: solid;
+        border-color: #ddd;
+        border-width: 0 0 2px;
+    }
+    .header img {
+        float: left;
+        margin: 10px 0;
+    }
+    .body-column {
+        margin:20px 0;
+        border-style: solid;
+        border-color: #ddd;
+        border-width: 0 0 0 2px;
+    }
+    .nav {
+        margin-top:10px;
+
+
+    }
+    .nav a.nav-header {
+        color:#000;
+        font-weight: bold;
+    }
+    .nav a {
+        color: #A13227;
+    }
+    .nav a.nav-disabled {
+        color: #ddd;
+    }
+</style>
 <body>
+
 
 <div class="container">
 
   <div class="row">
-    <div class="col-sm-10 col-sm-push-2">
-      <h1>Dashboard beta</h1>
+    <div class="col-sm-12 header">
+      <img src="assets/phoenixpact.png">
     </div>
-
-
   </div>
 
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-2 nav-column">
       <%= render 'layouts/navigation' %>
     </div>
-    <div class="col-sm-10">
+    <div class="col-sm-10 body-column">
       <%= yield %>
     </div>
   </div>

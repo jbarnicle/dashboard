@@ -2,8 +2,32 @@
 
 <div class="row">
   <div class="col-sm-12">
+    <h3 style="margin: 0 auto; font-size: 18px; text-align: center;">Phoenix Pact Fund: <span style="color:#A13227;">RBL Scholar Enrollment</span></h3>
     <div id="container" style="min-width: 250px; height: 350px; margin: 0 auto"></div>
   </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <h4 style="color:#A13227; font-size:18px; margin-bottom:5px;">RBL Scholar Enrollment: What it means</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum sollicitudin volutpat.
+      Nam at auctor eros, sed blandit orci. Donec sit amet tincidunt nisl, et varius risus. Vivamus
+      vehicula lobortis metus, nec fringilla felis sollicitudin at. Aenean et velit gravida nisi dictum
+      eleifend at sed ex. Ut lacinia volutpat neque a vestibulum. Nullam lacus urna, fringilla et dictum eget,
+      dictum vitae arcu. Quisque non odio ac felis lobortis dignissim. Vestibulum eu risus facilisis, feugiat
+      nulla sed, feugiat ex. Nulla rutrum erat sed magna imperdiet, sit amet pharetra justo molestie. Fusce
+      justo justo, lobortis eget bibendum ac, mollis sed justo. Vivamus libero justo, cursus a diam a, fermentum
+      sagittis urna.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+      <rect x="2" y="4" width="12" height="12" fill="#7cb5ec" rx="6" ry="6" class="highcharts-point"></rect>
+
+    </p>
+  </div>
+
+
+
 </div>
 <div class="row">
   <div class="col-sm-12">
@@ -52,7 +76,11 @@
 <script>
     Highcharts.chart('container', {
         title: {
-            text: 'Phoenix Fund'
+            text: '',
+            style: {
+                color: '#A13227',
+                fontWeight: 'bold'
+            }
         },
         xAxis: {
             categories: ['2015', '2016', '2017', '5 Year Goal']
@@ -63,16 +91,7 @@
                 text: 'Total Enrollment'
             }
         },
-
         labels: {
-            items: [{
-                html: 'Student enrollment',
-                style: {
-                    left: '50px',
-                    top: '18px',
-                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
-                }
-            }]
         },
         series: [{
             type: 'column',
@@ -96,29 +115,8 @@
                 lineColor: Highcharts.getOptions().colors[3],
                 fillColor: 'white'
             }
-        }, {
-            type: 'pie',
-            name: 'New students',
-            data: [{
-                name: '2015',
-                y: 50,
-                color: Highcharts.getOptions().colors[0] // Jane's color
-            }, {
-                name: '2016',
-                y: 63,
-                color: Highcharts.getOptions().colors[1] // John's color
-            }, {
-                name: '2017',
-                y: 58,
-                color: Highcharts.getOptions().colors[2] // Joe's color
-            }],
-            center: [100, 55],
-            size: 70,
-            showInLegend: false,
-            dataLabels: {
-                enabled: true
-            }
-        }]
+        }
+        ]
     });
 
 </script>
