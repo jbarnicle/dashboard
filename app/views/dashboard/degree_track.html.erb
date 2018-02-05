@@ -1,0 +1,123 @@
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div class="row">
+  <div class="col-sm-12">
+    <h3 style="margin: 0 auto; font-size: 18px; text-align: center;">Phoenix Pact Fund: <span style="color:#A13227;">Degree Earned or On Track</span></h3>
+    <div id="container" style="min-width: 250px; height: 350px; margin: 0 auto"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <h4 style="color:#A13227; font-size:18px; margin-bottom:5px;">Degree Earned or On Track: What it means</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum sollicitudin volutpat.
+      Nam at auctor eros, sed blandit orci. Donec sit amet tincidunt nisl, et varius risus. Vivamus
+      vehicula lobortis metus, nec fringilla felis sollicitudin at. Aenean et velit gravida nisi dictum
+      eleifend at sed ex. Ut lacinia volutpat neque a vestibulum. Nullam lacus urna, fringilla et dictum eget,
+      dictum vitae arcu. Quisque non odio ac felis lobortis dignissim. Vestibulum eu risus facilisis, feugiat
+      nulla sed, feugiat ex. Nulla rutrum erat sed magna imperdiet, sit amet pharetra justo molestie. Fusce
+      justo justo, lobortis eget bibendum ac, mollis sed justo. Vivamus libero justo, cursus a diam a, fermentum
+      sagittis urna.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+      <rect x="2" y="4" width="12" height="12" fill="#7cb5ec" rx="6" ry="6" class="highcharts-point"></rect>
+
+    </p>
+  </div>
+
+
+
+</div>
+<div class="row">
+  <div class="col-sm-12">
+
+    <table class="table">
+      <thead>
+      <tr>
+        <th></th>
+        <th>Percent On Track</th>
+        <th>Goal</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Class of 2015</td>
+        <td>82</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>Class of 2016</td>
+        <td>80</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>Class of 2017</td>
+        <td>78</td>
+        <td>80</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</div>
+<script>
+    Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['2015', '2016', '2017']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total Enrollment'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+                }
+            }
+        },
+        series: [
+            {
+                name: 'Not On Track',
+                data: [9, 13, 13]
+            },
+            {
+                name: 'Earned / On Track',
+                data: [41, 50, 45]
+            },
+        ]
+    });
+</script>
