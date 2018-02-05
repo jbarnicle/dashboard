@@ -56,7 +56,7 @@ Rails.application.routes.draw do
 
   root :to => "dashboard#home"
   get 'dashboard/home', to: 'dashboard#home'
-  get 'dashboard/about', to: 'dashboard#about'
+  get 'dashboard/degree-track', to: 'dashboard#degree_track'
 
 
 end

@@ -4,7 +4,7 @@ class DashboardController < ApplicationController
 
   end
 
-  def about
+  def degree_track
 
   end
 
