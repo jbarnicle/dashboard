@@ -1,3 +1,4 @@
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -60,24 +61,32 @@
   </div>
   <h3>How does the current number of RBL Scholars compare to previous years?</h3>
   <div>
-    <p></p>
-    <ul>
-      <li>2016: 55</li>
-      <li>2017: 113</li>
-      <li>2018: 174</li>
-    </ul>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>
+          <li>2016: 55</li>
+          <li>2017: 113</li>
+          <li>2018: 174</li>
+        </ul>
+      </div>
+    </div>
   </div>
   <h3>How does the current number of RBL Scholars compare to goals?</h3>
   <div>
-    <p>
-    </p>
-    <ul>
-      <li>Current: 174</li>
-      <li>2018 Goal: 170</li>
-      <li>2019 Goal: 245</li>
-      <li>2020 Goal: 270</li>
-      <li>2021 Goal: 300</li>
-    </ul>
+    <div class="row">
+      <div class="col-sm-3">
+        <ul>
+          <li>Current: 174</li>
+          <li>2018 Goal: 170</li>
+          <li>2019 Goal: 245</li>
+          <li>2020 Goal: 270</li>
+          <li>2021 Goal: 300</li>
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <div id="container" style="min-width: 250px; height: 350px; margin: 0 auto"></div>
+      </div>
+    </div>
   </div>
   <h3>What are the demographics of RBL Scholars?</h3>
   <div>
@@ -90,3 +99,50 @@
     </ul>
   </div>
 </div>
+<script>
+    Highcharts.chart('container', {
+        title: {
+            text: '',
+            style: {
+                color: '#A13227',
+                fontWeight: 'bold'
+            }
+        },
+        xAxis: {
+            categories: ['2015', '2016', '2017', '5 Year Goal']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total Enrollment'
+            }
+        },
+        labels: {
+        },
+        series: [{
+            type: 'column',
+            name: 'Previous year enrollment',
+            data: [0, 50, 113, 0]
+        }, {
+            type: 'column',
+            name: 'New enrollments',
+            data: [50, 63, 58, 0]
+        }, {
+            type: 'column',
+            name: 'Total enrollment',
+            data: [50, 113, 171, 248]
+        },
+            {
+                type: 'spline',
+                name: 'Total',
+                data: [50, 113, 171, 248],
+                marker: {
+                    lineWidth: 2,
+                    lineColor: Highcharts.getOptions().colors[3],
+                    fillColor: 'white'
+                }
+            }
+        ]
+    });
+
+</script>
