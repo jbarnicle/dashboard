@@ -54,9 +54,9 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  root :to => "dashboard#home"
-  get 'dashboard/home', to: 'dashboard#home'
-  get 'dashboard/degree-track', to: 'dashboard#degree_track'
+  root :to => "dashboard#index"
+  get ':id', to: 'dashboard#index'
+  get ':id/:path', to: 'dashboard#index'
 
 
 end
