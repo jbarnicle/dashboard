@@ -1,0 +1,198 @@
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+
+    .ui-state-active {
+        background-color: #EFEFEF;
+        color: #A13227;
+    }
+    #accordion {
+        margin-top:30px;
+    }
+
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    ul strong {
+        color: #A13227;
+    }
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active,
+    a.ui-button:active,
+    .ui-button:active,
+    .ui-button.ui-state-active:hover {
+        border: 1px solid #A13227;
+        background: #A13227;
+        font-weight: normal;
+        color: #ffffff;
+    }
+    .ui-icon-background,
+    .ui-state-active .ui-icon-background {
+        border: #A13227;
+        background-color: #ffffff;
+    }
+    .ui-icon-background,
+    .ui-state-active .ui-icon-background {
+        border: #A13227 !important;
+        background-color: #ffffff;
+    }
+
+
+</style>
+<script>
+    $( function() {
+        $( "#accordion" ).accordion({
+            heightStyle: "content"
+        });
+    } );
+</script>
+<div class="row">
+  <div class="col-sm-12">
+    <h3 style="margin: 0 auto; font-size: 18px; text-align: center;">Phoenix Pact Fund: <span style="color:#A13227;">RBL Scholar Enrollment</span></h3>
+  </div>
+</div>
+<div id="accordion">
+  <h3>How many RBL Scholars are there?</h3>
+  <div>
+    <p style="font-size: 24px;" class="animated bounce">
+      <strong>174</strong>
+    </p>
+  </div>
+  <h3>How does the current number of RBL Scholars compare to previous years?</h3>
+  <div>
+    <div class="row">
+      <div class="col-sm-6">
+        <ul>
+          <li><strong>2016:</strong> 55</li>
+          <li><strong>2017:</strong> 113</li>
+          <li><strong>2018:</strong> 174</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h3>How does the current number of RBL Scholars compare to goals?</h3>
+  <div>
+    <div class="row">
+      <div class="col-sm-3" style="height:350px;">
+        <ul style="margin-top:120px;">
+          <li><strong>Current:</strong> 174</li>
+          <li><strong>2018 Goal:</strong> 170</li>
+          <li><strong>2019 Goal:</strong> 245</li>
+          <li><strong>2020 Goal:</strong> 270</li>
+          <li><strong>2021 Goal:</strong> 300</li>
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <div id="container" style="min-width: 250px; height: 350px; margin: 0 30px;"></div>
+      </div>
+    </div>
+  </div>
+  <h3>What are the demographics of RBL Scholars?</h3>
+  <div>
+    <div class="row">
+      <div class="col-sm-5" style="height:350px;">
+        <ul style="margin-top:120px;">
+          <li><strong>Gender</strong>: 55% female; 45% male</li>
+          <li><strong>Race:</strong> African-American: 100%; Latino: 0%; White or Other: 0%</li>
+          <li><strong>Full Pell:</strong> 95%; Partial Pell: 5%; No Pell: 0%</li>
+        </ul>
+      </div>
+      <div class="col-sm-7">
+        <div id="container2" style="min-width: 200px; height: 350px; margin: 0 30px;"></div>
+      </div>
+  </div>
+  </div>
+</div>
+<script>
+    Highcharts.chart('container', {
+        title: {
+            text: '',
+            style: {
+                color: '#A13227',
+                fontWeight: 'bold'
+            }
+        },
+        xAxis: {
+            categories: ['2015', '2016', '2017', '5 Year Goal']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total Enrollment'
+            }
+        },
+        labels: {
+        },
+        series: [{
+            type: 'column',
+            name: 'Previous year enrollment',
+            data: [0, 50, 113, 0]
+        }, {
+            type: 'column',
+            name: 'New enrollments',
+            data: [50, 63, 58, 0]
+        }, {
+            type: 'column',
+            name: 'Total enrollment',
+            data: [50, 113, 171, 248]
+        },
+            {
+                type: 'spline',
+                name: 'Total',
+                data: [50, 113, 171, 248],
+                marker: {
+                    lineWidth: 2,
+                    lineColor: Highcharts.getOptions().colors[3],
+                    fillColor: 'white'
+                }
+            }
+        ]
+    });
+
+
+    Highcharts.chart('container2', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'RBL Scholars by Gender'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Gender',
+            colorByPoint: true,
+            data: [{
+                name: 'Female',
+                y: 55,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Male',
+                y: 45
+            }]
+        }]
+    });
+
+</script>

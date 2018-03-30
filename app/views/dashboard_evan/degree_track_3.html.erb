@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+
+    .ui-state-active {
+        background-color: #EFEFEF;
+        color: #A13227;
+    }
+    #accordion {
+        margin-top:30px;
+    }
+
+    ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .ui-state-active,
+    .ui-widget-content .ui-state-active,
+    .ui-widget-header .ui-state-active,
+    a.ui-button:active,
+    .ui-button:active,
+    .ui-button.ui-state-active:hover {
+        border: 1px solid #A13227;
+        background: #A13227;
+        font-weight: normal;
+        color: #ffffff;
+    }
+    .ui-icon-background,
+    .ui-state-active .ui-icon-background {
+        border: #A13227;
+        background-color: #ffffff;
+    }
+    .ui-icon-background,
+    .ui-state-active .ui-icon-background {
+        border: #A13227 !important;
+        background-color: #ffffff;
+    }
+
+</style>
+<script>
+    $( function() {
+        $( "#accordion" ).accordion({
+            heightStyle: "content"
+        });
+    } );
+</script>
+<div class="row">
+  <div class="col-sm-12">
+    <h3 style="margin: 0 auto; font-size: 18px; text-align: center;">Phoenix Pact Fund: <span style="color:#A13227;">RBL Scholar Enrollment</span></h3>
+  </div>
+</div>
+
+<div id="accordion">
+  <h3>What is the current on-time completion rate for RBL Scholars?</h3>
+  <div>
+    <p style="font-size:24px;" class="animated shake">40%</p>
+  </div>
+  <h3>What is the current 1.5x on-time completion rate for RBL Scholars?</h3>
+  <div>
+    <div>
+      <p style="font-size:24px;" class="animated pulse">80%</p>
+    </div>
+  </div>
+  <h3>What is the current enrollment rate for non-graduated RBL Scholars?</h3>
+  <div>
+    <div>
+      <p style="font-size:24px;" class="animated jello">82%</p>
+    </div>
+  </div>
+  <h3>What percentage of RBL Scholars are enrolled in four-year versus two-year colleges?</h3>
+  <div>
+    <ul>
+      <li>Four year: 70%</li>
+      <li>Two year: 30%</li>
+    </ul>
+  </div>
+</div>
