@@ -5,7 +5,7 @@ class DashboardController < ApplicationController
     @id = params[:id] ? params[:id] : 1
     @path = params[:path] ? params[:path] : 'home'
 
-    render "dashboard/#{@path}_#{@id}"
+    render "dashboard_evan/#{@path}_#{@id}"
 
   end
 
