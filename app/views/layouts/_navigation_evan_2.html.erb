@@ -1,0 +1,70 @@
+<style>
+    ul {
+        margin-left:0;
+        padding-left:0;
+    }
+    #global-nav {font-size: 17px; }
+    #global-nav ul li{padding: 2px 10px 2px 10px;}
+    #global-nav ul ul { display: none;}
+</style>
+<div id="global-nav">
+  <ul>
+    <li><a href='#' data-action="students" class=" clickable sidemenu-sub-menu-header">Students</a>
+      <ul>
+        <li><a href="#" data-action="schools" class="clickable">By School</a>
+          <ul>
+            <li><a href="#" data-action="gbecc" class="clickable">GBECC</a>
+            <li><a href="#">Alexander</a>
+            <li><a href="#">Forrestal</a>
+            <li><a href="#">LEARN 6</a>
+            <li><a href="#">LEARN 10</a>
+            <li><a href="#">AJK</a>
+            <li><a href="#">NMSA</a>
+            <li><a href="#">NCCHS</a>
+            <li><a href="#">Outplaced / Other</a>
+          </ul>
+        </li>
+        <li><a href="#">By Grade Level</a></li>
+        <li><a href="#">By Sub-Group</a></li>
+        <li><a href="#">Advanced</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Employees</a></li>
+    <li><a href="#">Finances</a></li>
+    <li><a href='#' class="sidemenu-sub-menu-header">Reading Proficiency</a>
+      <ul>
+        <li><a href="#">1.2 One</a>
+          <ul>
+            <li><a href="#">1.2.1</a></li>
+          </ul>
+        </li>
+        <li><a href="#">1.2 two</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Math Proficiency</a></li>
+    <li><a href="#">Attendance</a></li>
+    <li><a href="#">Discipline</a></li>
+    <li><a href="#">On Track</a></li>
+  </ul>
+</div>
+<script>
+    $(function () {
+                $('#global-nav a').click(function (e) {
+                            e.preventDefault();
+                            $(this).next('ul').toggle();
+                        }
+                );
+            }
+    );
+
+    $('.clickable').on("click", function() {
+        action = $(this).data("action");
+        $.get( "/" + action ).done(
+                function( data ) {
+                    $('#content-area').html(data);
+                }
+        );
+    });
+
+
+</script>

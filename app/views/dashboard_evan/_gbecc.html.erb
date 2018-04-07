@@ -1,0 +1,118 @@
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Students at GBECC</h1>
+    <h4>Total students: 261</h4>
+    <h4>Percentage of total D187 enrollment: 7%</h4>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <input type="radio" class='radio-select' name="option" value="0" checked="checked" /><label>Compared to last year</label>
+  </div>
+  <div class="col-sm-6">
+    <input type="radio" class='radio-select' name="option" value="1"/><label>Compared to SY18 goal</label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div id="container0" class="graph"></div>
+    <div id="container1" class="graph" style="display:none;"></div>
+  </div>
+</div>
+<script>
+  $('.radio-select').on('click', function() {
+    container = $('input[name=option]:checked').val();
+    $(".graph").hide();
+    $('#container' + container).show();
+  });
+
+</script>
+<script>
+    Highcharts.chart('container0', {
+        title: {
+            text: '',
+            style: {
+                color: '#A13227',
+                fontWeight: 'bold'
+            }
+        },
+        xAxis: {
+            categories: ['2015', '2016', '2017', '5 Year Goal']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total Enrollment'
+            }
+        },
+        labels: {
+        },
+        series: [{
+            type: 'column',
+            name: 'Previous year enrollment',
+            data: [0, 50, 113, 0]
+        }, {
+            type: 'column',
+            name: 'New enrollments',
+            data: [50, 63, 58, 0]
+        }, {
+            type: 'column',
+            name: 'Total enrollment',
+            data: [50, 113, 171, 248]
+        },
+            {
+                type: 'spline',
+                name: 'Total',
+                data: [50, 113, 171, 248],
+                marker: {
+                    lineWidth: 2,
+                    lineColor: Highcharts.getOptions().colors[3],
+                    fillColor: 'white'
+                }
+            }
+        ]
+    });
+
+
+    Highcharts.chart('container1', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'RBL Scholars by Gender'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Gender',
+            colorByPoint: true,
+            data: [{
+                name: 'Female',
+                y: 55,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Male',
+                y: 45
+            }]
+        }]
+    });
+
+</script>
