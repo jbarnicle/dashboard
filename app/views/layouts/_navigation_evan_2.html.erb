@@ -2,16 +2,20 @@
     ul {
         margin-left:0;
         padding-left:0;
+        list-style-type: none;
     }
     #global-nav {font-size: 17px; }
     #global-nav ul li{padding: 2px 10px 2px 10px;}
     #global-nav ul ul { display: none;}
+    #global-nav li.closed > a:after { content: ' >'; }
+    #global-nav li.open > a:after { content: ' v'; }
+
 </style>
-<div id="global-nav">
+<div id="global-nav" style="margin-top:35px;">
   <ul>
-    <li><a href='#' data-action="students" class=" clickable sidemenu-sub-menu-header">Students</a>
+    <li class="open"><a href='#' data-action="students" class=" clickable sidemenu-sub-menu-header">Students</a>
       <ul>
-        <li><a href="#" data-action="schools" class="clickable">By School</a>
+        <li class="closed"><a href="#" data-action="schools" class="clickable">By School</a>
           <ul>
             <li><a href="#" data-action="gbecc" class="clickable">GBECC</a>
             <li><a href="#">Alexander</a>
@@ -51,7 +55,18 @@
     $(function () {
                 $('#global-nav a').click(function (e) {
                             e.preventDefault();
-                            $(this).next('ul').toggle();
+                            $(this).siblings('ul').each(function() {
+                                        visible = $(this).is(":visible");
+                                        $(this).toggle();
+                                        if (visible) {
+                                            $(this).children('li').each(function () {
+                                                if ($(this).is(":visible")) {
+                                                    $(this).children('ul').toggle();
+                                                }
+                                            });
+                                        }
+                                    }
+                            );
                         }
                 );
             }

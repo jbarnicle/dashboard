@@ -1,43 +1,45 @@
 <div class="row">
   <div class="col-sm-12">
-    <h1>Students at GBECC</h1>
+    <h3 class="yellow">Students at GBECC</h3>
     <h4>Total students: 261</h4>
     <h4>Percentage of total D187 enrollment: 7%</h4>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-6">
+<div class="row" style="margin-top:20px;">
+  <div class="col-sm-5">
     <input type="radio" class='radio-select' name="option" value="0" checked="checked" /><label>Compared to last year</label>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-5">
     <input type="radio" class='radio-select' name="option" value="1"/><label>Compared to SY18 goal</label>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-12">
+<div class="row" style="margin-top:20px;">
+  <div class="col-sm-10">
     <div id="container0" class="graph"></div>
     <div id="container1" class="graph" style="display:none;"></div>
   </div>
 </div>
 <script>
-  $('.radio-select').on('click', function() {
-    container = $('input[name=option]:checked').val();
-    $(".graph").hide();
-    $('#container' + container).show();
-  });
+    $('.radio-select').on('click', function() {
+        container = $('input[name=option]:checked').val();
+        $(".graph").hide();
+        $('#container' + container).show();
+    });
 
 </script>
 <script>
     Highcharts.chart('container0', {
+        chart: {
+            type: 'column'
+        },
         title: {
-            text: '',
-            style: {
-                color: '#A13227',
-                fontWeight: 'bold'
-            }
+            text: 'Enrollment SY17 vs. SY18'
         },
         xAxis: {
-            categories: ['2015', '2016', '2017', '5 Year Goal']
+            categories: [
+                'Number of Students'
+            ],
+            crosshair: true
         },
         yAxis: {
             min: 0,
@@ -45,73 +47,71 @@
                 text: 'Total Enrollment'
             }
         },
-        labels: {
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
         },
         series: [{
-            type: 'column',
-            name: 'Previous year enrollment',
-            data: [0, 50, 113, 0]
-        }, {
-            type: 'column',
-            name: 'New enrollments',
-            data: [50, 63, 58, 0]
-        }, {
-            type: 'column',
-            name: 'Total enrollment',
-            data: [50, 113, 171, 248]
-        },
-            {
-                type: 'spline',
-                name: 'Total',
-                data: [50, 113, 171, 248],
-                marker: {
-                    lineWidth: 2,
-                    lineColor: Highcharts.getOptions().colors[3],
-                    fillColor: 'white'
-                }
-            }
-        ]
-    });
+            name: 'School Year 2017',
+            data: [220]
 
+        }, {
+            name: 'School Year 2018',
+            data: [261]
+
+        }]
+    });
 
     Highcharts.chart('container1', {
         chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie'
+            type: 'column'
         },
         title: {
-            text: 'RBL Scholars by Gender'
+            text: 'Enrollment SY18 vs. SY18 Goal'
+        },
+        xAxis: {
+            categories: [
+                'Number of Students'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total Enrollment'
+            }
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
         },
         plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
             }
         },
         series: [{
-            name: 'Gender',
-            colorByPoint: true,
-            data: [{
-                name: 'Female',
-                y: 55,
-                sliced: true,
-                selected: true
-            }, {
-                name: 'Male',
-                y: 45
-            }]
+            name: 'School Year 2018',
+            data: [261]
+
+        }, {
+            name: 'School Year 2018 Goal',
+            data: [400]
         }]
     });
 
