@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_navigation_evan_2.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_navigation_evan_2.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation_evan_2.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1350">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.35433072" vertical-offset="0" max-vertical-offset="1365">
+              <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -51,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_students.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_students.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/dashboard_evan/_students.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4015748" vertical-offset="0" max-vertical-offset="1830">
+            <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1830">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -149,9 +149,9 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_navigation_evan_3.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard_evan/index.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application_evan.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_navigation_evan_2.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard_evan/_gbecc.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard_evan/_students.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_navigation_evan_2.html.erb" />
       </list>
     </option>
   </component>
@@ -1026,16 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation_evan_2.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1350">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard_evan/_gbecc.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-49.375" vertical-offset="0" max-vertical-offset="1845">
@@ -1056,7 +1046,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard_evan/_students.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4015748" vertical-offset="0" max-vertical-offset="1830">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1830">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -1068,6 +1058,16 @@
             <marker date="1523225674000" expanded="true" signature="2498:2512" placeholder="..." />
             <marker date="1523225674000" expanded="true" signature="2583:2613" placeholder="..." />
             <marker date="1523225674000" expanded="true" signature="2663:2672" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation_evan_2.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35433072" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
