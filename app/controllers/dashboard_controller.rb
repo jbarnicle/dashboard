@@ -11,12 +11,16 @@ class DashboardController < ApplicationController
   end
 
   def main
-    @total_students =  DummyData.where(:school_year => 2018).count;
+    @total_students =  DummyData.where(:school_year => 2018).count
 
     render partial: "dashboard_evan/main", :layout => false
   end
 
   def students
+
+    @total_ly = DummyData.where(:school_year => 2017).count
+    @total_ty = DummyData.where(:school_year => 2018).count
+
     render partial: "dashboard_evan/students", :layout => false
   end
 
@@ -25,7 +29,7 @@ class DashboardController < ApplicationController
     @schools_attendance = Array.new
 
     @schools.each do |school|
-      @schools_attendance.push DummyData.where(:school => school, :school_year => 2018).count;
+      @schools_attendance.push DummyData.where(:school => school, :school_year => 2018).count
     end
     render partial: "dashboard_evan/schools", :layout => false
   end
@@ -37,8 +41,8 @@ class DashboardController < ApplicationController
 
   def school
     @school = params[:id]
-    @total_ly = DummyData.where(:school => @school, :school_year => 2017).count;
-    @total_ty = DummyData.where(:school => @school, :school_year => 2018).count;
+    @total_ly = DummyData.where(:school => @school, :school_year => 2017).count
+    @total_ty = DummyData.where(:school => @school, :school_year => 2018).count
 
 
     render partial: "dashboard_evan/school", :layout => false
