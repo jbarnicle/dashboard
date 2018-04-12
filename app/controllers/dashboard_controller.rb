@@ -11,6 +11,8 @@ class DashboardController < ApplicationController
   end
 
   def main
+    @total_students =  DummyData.where(:school_year => 2018).count;
+
     render partial: "dashboard_evan/main", :layout => false
   end
 
