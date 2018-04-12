@@ -19,6 +19,12 @@ class DashboardController < ApplicationController
   end
 
   def schools
+    @schools = DummyData.order(:school).distinct.pluck(:school)
+    @schools_attendance = Array.new
+
+    @schools.each do |school|
+      @schools_attendance.push DummyData.where(:school => school, :school_year => 2018).count;
+    end
     render partial: "dashboard_evan/schools", :layout => false
   end
 
