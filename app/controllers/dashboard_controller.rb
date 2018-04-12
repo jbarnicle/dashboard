@@ -29,6 +29,10 @@ class DashboardController < ApplicationController
 
   def school
     @school = params[:id]
+    @total_ly = DummyData.where(:school => @school, :school_year => 2017).count;
+    @total_ty = DummyData.where(:school => @school, :school_year => 2018).count;
+
+
     render partial: "dashboard_evan/school", :layout => false
   end
 

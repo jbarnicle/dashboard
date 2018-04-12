@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 group :production do
-  gem 'pg', '~> 0.11'
+#  gem 'pg', '~> 0.11'
   gem 'rails_12factor'
 end
 
@@ -27,6 +27,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use bootstrap
 gem 'bootstrap-sass', '~> 3.3.5'
+
+# Use postgres as the database for Active Record
+gem 'pg'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -1,0 +1,238 @@
+Student Number,Year,School,Grade,Gender,Race,FRL,Attendance,Reading,Math
+1,2017,GBECC,PreK 1,M,Hispanic,Yes,90%,8,10
+2,2017,GBECC,PreK 1,M,Black,Yes,91%,7,7
+3,2017,GBECC,PreK 1,F,Hispanic,No,73%,9,9
+4,2017,GBECC,PreK 1,F,White,Yes,86%,10,10
+5,2017,GBECC,PreK 2,M,Hispanic,Yes,92%,12,9
+6,2017,GBECC,PreK 2,F,Black,Yes,87%,11,11
+7,2017,GBECC,PreK 2,F,Hispanic,No,88%,7,7
+8,2017,GBECC,PreK 2,F,White,Yes,74%,8,8
+9,2017,Forrestal,KDG,M,Hispanic,Yes,97%,21,19
+10,2017,Forrestal,KDG,F,Hispanic,Yes,98%,18,18
+11,2017,Forrestal,KDG,F,Black,No,89%,17,17
+12,2017,Forrestal,1st,M,Hispanic,Yes,90%,33,29
+13,2017,Forrestal,1st,M,White,Yes,91%,25,25
+14,2017,Forrestal,1st,F,Black,No,73%,28,28
+15,2017,Forrestal,2nd,F,Hispanic,Yes,86%,41,39
+16,2017,Forrestal,2nd,F,Black,Yes,92%,42,42
+17,2017,Forrestal,2nd,M,Hispanic,No,87%,36,36
+18,2017,Forrestal,3rd,M,Hispanic,Yes,88%,51,51
+19,2017,Forrestal,3rd,F,Black,Yes,74%,49,50
+20,2017,Forrestal,3rd,F,White,No,97%,47,47
+21,2017,Alexander,KDG,M,Hispanic,Yes,98%,22,22
+22,2017,Alexander,KDG,M,White,Yes,89%,19,19
+23,2017,Alexander,KDG,F,Black,Yes,90%,16,
+24,2017,Alexander,KDG,F,Hispanic,Yes,97%,20,20
+25,2017,Alexander,1st,F,Hispanic,Yes,91%,31,31
+26,2017,Alexander,1st,F,Hispanic,Yes,73%,28,28
+27,2017,Alexander,1st,M,Black,Yes,86%,27,27
+28,2017,Alexander,1st,F,Black,Yes,92%,29,29
+29,2017,Alexander,2nd,M,White,No,87%,38,40
+30,2017,Alexander,2nd,F,Hispanic,Yes,88%,37,37
+31,2017,Alexander,2nd,F,Hispanic,Yes,74%,39,39
+32,2017,Alexander,2nd,M,Black,Yes,97%,40,40
+33,2017,Alexander,3rd,F,Hispanic,Yes,98%,50,50
+34,2017,Alexander,3rd,M,Hispanic,Yes,89%,49,49
+35,2017,Alexander,3rd,M,Black,No,90%,48,51
+36,2017,Alexander,3rd,F,White,Yes,98%,47,46
+37,2017,AJK,4th,M,Hispanic,Yes,91%,62,62
+38,2017,AJK,4th,M,Hispanic,Yes,73%,61,61
+39,2017,AJK,4th,F,Hispanic,No,86%,58,
+40,2017,AJK,4th,F,Black,Yes,92%,59,59
+41,2017,AJK,4th,F,Black,Yes,87%,57,57
+42,2017,AJK,5th,M,White,Yes,88%,73,69
+43,2017,AJK,5th,M,Hispanic,Yes,74%,71,71
+44,2017,AJK,5th,F,Hispanic,No,97%,68,68
+45,2017,AJK,5th,F,Black,Yes,98%,67,67
+46,2017,AJK,5th,M,Black,Yes,89%,66,66
+47,2017,AJK,5th,F,Hispanic,Yes,90%,64,64
+48,2017,Neal,6th,M,Hispanic,Yes,91%,81,78
+49,2017,Neal,6th,M,Hispanic,Yes,73%,79,79
+50,2017,Neal,6th,F,Black,No,86%,78,78
+51,2017,Neal,6th,F,Black,Yes,92%,77,77
+52,2017,Neal,7th,F,Hispanic,Yes,87%,90,90
+53,2017,Neal,7th,F,White,Yes,88%,89,90
+54,2017,Neal,7th,M,Hispanic,Yes,74%,87,87
+55,2017,Neal,7th,M,Black,Yes,97%,86,86
+56,2017,Neal,8th,F,Hispanic,Yes,98%,101,101
+57,2017,Neal,8th,F,Hispanic,Yes,89%,99,
+58,2017,Neal,8th,M,Black,Yes,90%,96,96
+59,2017,Neal,8th,M,Black,Yes,91%,95,95
+60,2017,NCCHS,9th,F,Hispanic,Yes,73%,111,111
+61,2017,NCCHS,9th,F,Hispanic,Yes,86%,109,
+62,2017,NCCHS,9th,M,Black,Yes,92%,107,107
+63,2017,NCCHS,9th,M,White,No,87%,110,110
+64,2017,NCCHS,9th,F,Hispanic,Yes,95%,105,106
+65,2017,NCCHS,10th,F,Hispanic,Yes,88%,120,120
+66,2017,NCCHS,10th,F,Black,Yes,74%,119,120
+67,2017,NCCHS,10th,F,Hispanic,Yes,97%,118,118
+68,2017,NCCHS,10th,M,Hispanic,Yes,98%,117,117
+69,2017,NCCHS,11th,F,Black,Yes,89%,131,131
+70,2017,NCCHS,11th,F,Black,Yes,93%,129,129
+71,2017,NCCHS,11th,M,Hispanic,Yes,94%,128,128
+72,2017,NCCHS,12th,F,Hispanic,No,85%,141,141
+73,2017,NCCHS,12th,F,Hispanic,Yes,88%,139,139
+74,2017,NCCHS,12th,M,Black,Yes,91%,138,138
+75,2017,NCCHS,12th,F,White,Yes,76%,140,140
+76,2017,Outplaced,2nd,M,Hispanic,Yes,77%,36,37
+77,2017,Outplaced,3rd,F,Hispanic,Yes,92%,48,49
+78,2017,Outplaced,4th,F,Black,Yes,90%,56,57
+79,2017,Outplaced,5th,M,Black,Yes,90%,66,67
+80,2017,Outplaced,6th,F,White,Yes,95%,78,75
+81,2017,Outplaced,7th,F,Hispanic,Yes,88%,88,85
+82,2017,Outplaced,8th,M,Hispanic,Yes,87%,95,92
+83,2017,Outplaced,9th,F,Black,No,89%,105,106
+84,2017,Outplaced,11th,F,Black,Yes,97%,128,127
+85,2017,Outplaced,12th,M,Hispanic,Yes,100%,136,135
+86,2017,LEARN 6,KDG,M,Hispanic,Yes,100%,22,19
+87,2017,LEARN 6,KDG,F,Hispanic,No,99%,23,23
+88,2017,LEARN 6,KDG,M,White,Yes,89%,19,19
+89,2017,LEARN 6,1st,F,Black,Yes,98%,29,29
+90,2017,LEARN 6,1st,F,Hispanic,Yes,97%,31,29
+91,2017,LEARN 6,1st,M,Black,No,89%,32,32
+92,2017,LEARN 6,2nd,F,Hispanic,Yes,93%,36,36
+93,2017,LEARN 6,2nd,M,Black,Yes,92%,37,37
+94,2017,LEARN 6,2nd,F,Hispanic,Yes,90%,40,39
+95,2017,LEARN 6,2nd,F,White,Yes,89%,41,41
+96,2017,LEARN 6,3rd,M,Hispanic,Yes,95%,51,48
+97,2017,LEARN 6,3rd,F,White,Yes,96%,56,56
+98,2017,LEARN 6,3rd,F,Black,Yes,91%,48,48
+99,2017,LEARN 6,4th,F,Hispanic,Yes,95%,59,59
+100,2017,LEARN 6,4th,F,Black,Yes,94%,61,58
+101,2017,LEARN 6,4th,M,Hispanic,Yes,93%,62,62
+102,2017,LEARN 6,4th,F,White,Yes,89%,56,56
+103,2017,LEARN 6,5th,M,Hispanic,Yes,87%,70,70
+104,2017,LEARN 6,5th,F,Black,Yes,88%,72,68
+105,2017,LEARN 6,5th,M,Black,Yes,97%,69,69
+106,2017,LEARN 6,6th,F,Hispanic,Yes,94%,80,79
+107,2017,LEARN 6,6th,M,Hispanic,No,94%,78,78
+108,2017,LEARN 6,6th,F,Black,Yes,89%,81,81
+109,2017,LEARN 6,6th,M,White,Yes,87%,77,77
+110,2017,LEARN 6,7th,F,Hispanic,Yes,92%,90,90
+111,2017,LEARN 6,7th,F,Hispanic,Yes,91%,89,89
+112,2017,LEARN 6,7th,F,Black,Yes,89%,88,88
+113,2017,LEARN 6,7th,M,Hispanic,No,94%,87,87
+114,2017,LEARN 6,8th,M,White,Yes,99%,100,100
+115,2017,LEARN 6,8th,F,Black,No,94%,95,101
+116,2017,LEARN 6,8th,F,Hispanic,Yes,78%,97,97
+118,2018,GBECC,PreK 1,M,Hispanic,Yes,90%,8,10
+119,2018,GBECC,PreK 1,M,Black,Yes,91%,7,7
+120,2018,GBECC,PreK 1,F,Hispanic,No,73%,9,9
+121,2018,GBECC,PreK 1,F,White,Yes,86%,10,10
+136,2018,GBECC,PreK 1,F,Hispanic,Yes,91%,11,9
+1,2018,GBECC,PreK 2,M,Hispanic,Yes,92%,12,9
+2,2018,GBECC,PreK 2,F,Black,Yes,87%,11,11
+3,2018,GBECC,PreK 2,F,Hispanic,No,88%,7,7
+4,2018,GBECC,PreK 2,F,White,Yes,74%,8,8
+137,2018,GBECC,PreK 2,M,Black,Yes,94%,10,9
+5,2018,Forrestal,KDG,M,Hispanic,Yes,97%,21,19
+6,2018,Forrestal,KDG,F,Hispanic,Yes,98%,18,18
+117,2018,Forrestal,KDG,F,Black,No,89%,17,17
+138,2018,Forrestal,KDG,M,White,No,94%,19,21
+9,2018,Forrestal,1st,M,Hispanic,Yes,90%,33,29
+10,2018,Forrestal,1st,M,White,Yes,91%,25,25
+11,2018,Forrestal,1st,F,Black,No,73%,28,28
+139,2018,Forrestal,1st,F,Hispanic,Yes,89%,29,31
+12,2018,Forrestal,2nd,F,Hispanic,Yes,86%,41,39
+13,2018,Forrestal,2nd,F,Black,Yes,92%,42,42
+124,2018,Forrestal,2nd,M,Hispanic,No,87%,36,36
+15,2018,Forrestal,3rd,M,Hispanic,Yes,88%,51,51
+16,2018,Forrestal,3rd,F,Black,Yes,74%,49,50
+17,2018,Forrestal,3rd,F,White,No,97%,47,47
+7,2018,Alexander,KDG,M,Hispanic,Yes,98%,22,22
+8,2018,Alexander,KDG,M,White,Yes,89%,19,
+122,2018,Alexander,KDG,F,Black,Yes,90%,16,19
+123,2018,Alexander,KDG,F,Hispanic,Yes,97%,20,20
+140,2018,Alexander,KDG,M,Hispanic,Yes,93%,18,21
+21,2018,Alexander,1st,F,Hispanic,Yes,91%,31,31
+22,2018,Alexander,1st,F,Hispanic,Yes,73%,28,28
+23,2018,Alexander,1st,M,Black,Yes,86%,27,27
+25,2018,Alexander,2nd,M,White,No,87%,38,40
+26,2018,Alexander,2nd,F,Hispanic,Yes,88%,37,37
+27,2018,Alexander,2nd,F,Hispanic,Yes,74%,39,39
+28,2018,Alexander,2nd,M,Black,Yes,97%,40,40
+29,2018,Alexander,3rd,F,Hispanic,Yes,98%,50,50
+30,2018,Alexander,3rd,M,Hispanic,Yes,89%,49,49
+125,2018,Alexander,3rd,F,White,Yes,98%,47,46
+33,2018,AJK,4th,M,Hispanic,Yes,91%,62,62
+34,2018,AJK,4th,M,Hispanic,Yes,73%,61,61
+35,2018,AJK,4th,F,Hispanic,No,86%,58,59
+18,2018,AJK,4th,F,Black,Yes,92%,59,
+19,2018,AJK,4th,F,Black,Yes,87%,57,57
+37,2018,AJK,5th,M,White,Yes,88%,73,69
+38,2018,AJK,5th,M,Hispanic,Yes,74%,71,71
+39,2018,AJK,5th,F,Hispanic,No,97%,68,68
+40,2018,AJK,5th,F,Black,Yes,98%,67,67
+41,2018,AJK,5th,M,Black,Yes,89%,66,66
+126,2018,AJK,5th,F,Hispanic,Yes,90%,64,64
+42,2018,Neal,6th,M,Hispanic,Yes,91%,81,78
+43,2018,Neal,6th,M,Hispanic,Yes,73%,79,79
+44,2018,Neal,6th,F,Black,No,86%,78,78
+45,2018,Neal,6th,F,Black,Yes,92%,77,77
+48,2018,Neal,7th,F,Hispanic,Yes,87%,90,90
+49,2018,Neal,7th,F,White,Yes,88%,89,90
+50,2018,Neal,7th,M,Hispanic,Yes,74%,87,87
+51,2018,Neal,7th,M,Black,Yes,97%,86,86
+52,2018,Neal,8th,F,Hispanic,Yes,98%,101,
+53,2018,Neal,8th,F,Hispanic,Yes,89%,99,101
+54,2018,Neal,8th,M,Black,Yes,90%,96,96
+55,2018,Neal,8th,M,Black,Yes,91%,95,95
+56,2018,NCCHS,9th,F,Hispanic,Yes,73%,111,111
+57,2018,NCCHS,9th,F,Hispanic,Yes,86%,109,
+58,2018,NCCHS,9th,M,Black,Yes,92%,107,107
+127,2018,NCCHS,9th,M,White,No,87%,110,110
+59,2018,NCCHS,9th,F,Hispanic,Yes,95%,105,106
+60,2018,NCCHS,10th,F,Hispanic,Yes,88%,120,120
+61,2018,NCCHS,10th,F,Black,Yes,74%,119,120
+62,2018,NCCHS,10th,F,Hispanic,Yes,97%,118,118
+63,2018,NCCHS,10th,M,Hispanic,Yes,98%,117,117
+65,2018,NCCHS,11th,F,Black,Yes,89%,131,131
+66,2018,NCCHS,11th,F,Black,Yes,93%,129,129
+67,2018,NCCHS,11th,M,Hispanic,Yes,94%,128,128
+69,2018,NCCHS,12th,F,Hispanic,No,85%,141,141
+70,2018,NCCHS,12th,F,Hispanic,Yes,88%,139,139
+71,2018,NCCHS,12th,M,Black,Yes,91%,138,138
+128,2018,NCCHS,12th,F,White,Yes,76%,140,140
+129,2018,Outplaced,2nd,M,Hispanic,Yes,77%,36,37
+76,2018,Outplaced,3rd,F,Hispanic,Yes,92%,48,49
+77,2018,Outplaced,4th,F,Black,Yes,90%,56,57
+78,2018,Outplaced,5th,M,Black,Yes,90%,66,67
+79,2018,Outplaced,6th,F,White,Yes,95%,78,75
+89,2018,Outplaced,7th,F,Hispanic,Yes,88%,88,85
+81,2018,Outplaced,8th,M,Hispanic,Yes,87%,95,92
+82,2018,Outplaced,9th,F,Black,No,89%,105,106
+83,2018,Outplaced,10th,F,Black,Yes,97%,128,127
+84,2018,Outplaced,12th,M,Hispanic,Yes,100%,136,135
+130,2018,LEARN 6,KDG,M,Hispanic,Yes,100%,22,19
+131,2018,LEARN 6,KDG,F,Hispanic,No,99%,23,23
+132,2018,LEARN 6,KDG,M,White,Yes,89%,19,19
+86,2018,LEARN 6,1st,F,Black,Yes,98%,29,29
+87,2018,LEARN 6,1st,F,Hispanic,Yes,97%,31,29
+88,2018,LEARN 6,1st,M,Black,No,89%,32,32
+141,2018,LEARN 6,1st,M,White,No,92%,28,33
+89,2018,LEARN 6,2nd,F,Hispanic,Yes,93%,36,36
+90,2018,LEARN 6,2nd,M,Black,Yes,92%,37,37
+91,2018,LEARN 6,2nd,F,Hispanic,Yes,90%,40,39
+133,2018,LEARN 6,2nd,F,White,Yes,89%,41,41
+92,2018,LEARN 6,3rd,M,Hispanic,Yes,95%,51,48
+93,2018,LEARN 6,3rd,F,White,Yes,96%,56,56
+94,2018,LEARN 6,3rd,F,Black,Yes,91%,48,48
+142,2018,LEARN 6,3rd,M,Hispanic,No,89%,47,50
+96,2018,LEARN 6,4th,F,Hispanic,Yes,95%,59,59
+97,2018,LEARN 6,4th,F,Black,Yes,94%,61,58
+98,2018,LEARN 6,4th,M,Hispanic,Yes,93%,62,62
+134,2018,LEARN 6,4th,F,White,Yes,89%,56,56
+99,2018,LEARN 6,5th,M,Hispanic,Yes,87%,70,70
+100,2018,LEARN 6,5th,F,Black,Yes,88%,72,68
+101,2018,LEARN 6,5th,M,Black,Yes,97%,69,69
+103,2018,LEARN 6,6th,F,Hispanic,Yes,94%,80,79
+104,2018,LEARN 6,6th,M,Hispanic,No,94%,78,78
+105,2018,LEARN 6,6th,F,Black,Yes,89%,81,81
+135,2018,LEARN 6,6th,M,White,Yes,87%,77,77
+106,2018,LEARN 6,7th,F,Hispanic,Yes,92%,90,90
+107,2018,LEARN 6,7th,F,Hispanic,Yes,91%,89,89
+108,2018,LEARN 6,7th,F,Black,Yes,89%,88,88
+109,2018,LEARN 6,7th,M,Hispanic,No,94%,87,87
+110,2018,LEARN 6,8th,M,White,Yes,99%,100,100
+111,2018,LEARN 6,8th,F,Black,No,94%,95,101
+112,2018,LEARN 6,8th,F,Hispanic,Yes,78%,97,97

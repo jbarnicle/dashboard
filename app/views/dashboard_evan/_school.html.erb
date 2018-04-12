@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-sm-12">
     <h3 class="yellow">Students at <%= @school %></h3>
-    <h4>Total students: 261</h4>
-    <h4>Percentage of total D187 enrollment: 7%</h4>
+    <h4>Total students: <%= @total_ty %></h4>
+    <h4>Percentage of total D187 enrollment: <%= number_to_percentage((@total_ty / 121.0) * 100, precision: 0) %></h4>
   </div>
 </div>
 <div class="row" style="margin-top:20px;">
@@ -63,11 +63,11 @@
         },
         series: [{
             name: 'School Year 2017',
-            data: [220]
+            data: [<%= @total_ly %>]
 
         }, {
             name: 'School Year 2018',
-            data: [261]
+            data: [<%= @total_ty %>]
 
         }]
     });
@@ -107,11 +107,11 @@
         },
         series: [{
             name: 'School Year 2018',
-            data: [261]
+            data: [<%= @total_ty %>]
 
         }, {
             name: 'School Year 2018 Goal',
-            data: [400]
+            data: [20]
         }]
     });
 

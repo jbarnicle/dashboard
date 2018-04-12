@@ -5,8 +5,9 @@
       <ul>
         <li class='has-sub'><a href='#' class="clickable" data-action="schools"><span>By School</span></a>
           <ul>
-            <li><a href='#' data-action="school/GBECC" class="clickable"><span>GBECC</span></a></li>
-            <li class='last'><a href='#' data-action="school/Alexander" class="clickable"><span>Alexander</span></a></li>
+            <% DummyData.order(:school).distinct.pluck(:school).each do |school| %>
+            <li><a href='#' data-action="school/<%= school %>" class="clickable"><span><%= school %></span></a></li>
+            <% end %>
           </ul>
         </li>
         <li class='has-sub'><a href='#' data-action="template/By%20Grade%20Level" class="clickable"><span>By Grade Level</span></a>
