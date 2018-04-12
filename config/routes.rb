@@ -55,10 +55,11 @@ Rails.application.routes.draw do
   #   end
 
   root :to => "dashboard#index"
+  get '/template/:id', to: 'dashboard#template'
   get '/main', to: 'dashboard#main'
   get '/students', to: 'dashboard#students'
   get '/schools', to: 'dashboard#schools'
-  get '/gbecc', to: 'dashboard#gbecc'
+  get '/school/:id', to: 'dashboard#school'
   get ':id', to: 'dashboard#index'
   get ':id/:path', to: 'dashboard#index'
 

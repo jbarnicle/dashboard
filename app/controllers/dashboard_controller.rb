@@ -21,9 +21,17 @@ class DashboardController < ApplicationController
   def schools
     render partial: "dashboard_evan/schools", :layout => false
   end
-  def gbecc
-    render partial: "dashboard_evan/gbecc", :layout => false
+
+  def template
+    @page = params[:id]
+    render partial: "dashboard_evan/template", :layout => false
   end
+
+  def school
+    @school = params[:id]
+    render partial: "dashboard_evan/school", :layout => false
+  end
+
 
 
   private

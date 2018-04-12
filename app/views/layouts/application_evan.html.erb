@@ -45,18 +45,19 @@
     }
 
     .tile-row {
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .tile {
-        border: 2px solid blue;
+        border: 2px solid #1fa0e4;
         border-radius: 25px;
         height: 180px;
-        color: #ffbb44;
+        color: rgb(92, 92, 97);
     }
     .tile h4 {
         text-align: center;
         font-size:22px;
-        margin:18px 0;
+        margin:14px 0;
+        color: #ffbb44;
     }
     .tile .tile-label {
         font-size:20px;
@@ -95,10 +96,10 @@
   </div>
 
   <div class="row">
-    <div class="col-sm-2 nav-column">
-      <%= render 'layouts/navigation_evan_2' %>
+    <div class="col-sm-3 nav-column">
+      <%= render 'layouts/navigation_evan_3' %>
     </div>
-    <div class="col-sm-10 body-column">
+    <div class="col-sm-9 body-column">
       <%= yield %>
     </div>
   </div>
